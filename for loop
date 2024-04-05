@@ -1,0 +1,31 @@
+#include<iostream>
+#include<string>
+using namespace std;
+void printRepresentation(int n)
+{
+    if(n>=1&&n<=9)
+ {
+     //string num[]={"one","two"};
+     
+        string num[]={"one","two","three","four","five","six","seven","eight","nine"};
+    cout<<num[n-1]<<endl;
+ }
+  else if(n>9&&n%2==0)
+  {
+      cout<<"even"<<endl;
+  } 
+   else
+  {
+      cout<<"odd"<<endl;
+  }
+} 
+int main(){
+    int a,b,i;
+        cin>>a>>b;
+
+    for(i=a;i<=b;i++)
+{
+    printRepresentation(i);
+}
+return 0;
+}
